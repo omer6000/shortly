@@ -6,19 +6,15 @@
 
     <!-- Desktop Navigation Links (Hidden on Mobile) -->
     <div class="hidden desktop:flex space-x-8">
-      <a href="#" class="text-grayishViolet hover:text-veryDarkBlue font-poppins">Features</a>
-      <a href="#" class="text-grayishViolet hover:text-veryDarkBlue font-poppins">Pricing</a>
-      <a href="#" class="text-grayishViolet hover:text-veryDarkBlue font-poppins">Resources</a>
+      <StyledLink text="Features" />
+      <StyledLink text="Pricing" />
+      <StyledLink text="Resources" />
     </div>
 
     <!-- Desktop Login and Sign Up (Hidden on Mobile) -->
     <div class="hidden desktop:flex items-center space-x-4">
-      <a href="#" class="text-grayishViolet hover:text-veryDarkBlue font-poppins">
-        Login
-      </a>
-      <a href="#" class="bg-cyan text-white py-2 px-4 rounded-full hover:bg-darkViolet font-poppins">
-        Sign Up
-      </a>
+      <StyledLink text="Login" />
+      <StyledLink text="Sign Up" styletext="bg-cyan text-white py-2 px-4 rounded-full hover:bg-darkViolet font-poppins" />
     </div>
 
     <!-- Mobile Menu Button (Hidden on Desktop) -->
@@ -31,13 +27,11 @@
     <!-- Mobile Menu (Visible when the menu button is clicked) -->
     <div v-if="isMenuOpen" class="absolute top-16 left-0 w-full bg-white shadow-md desktop:hidden">
       <div class="flex flex-col items-center space-y-4 py-4">
-        <a href="#" class="text-grayishViolet hover:text-veryDarkBlue font-poppins">Features</a>
-        <a href="#" class="text-grayishViolet hover:text-veryDarkBlue font-poppins">Pricing</a>
-        <a href="#" class="text-grayishViolet hover:text-veryDarkBlue font-poppins">Resources</a>
-        <a href="#" class="text-grayishViolet hover:text-veryDarkBlue font-poppins">Login</a>
-        <a href="#" class="bg-cyan text-white py-2 px-4 rounded-full hover:bg-darkViolet font-poppins text-center">
-          Sign Up
-        </a>
+        <StyledLink text="Features" />
+        <StyledLink text="Pricing" />
+        <StyledLink text="Resources" />
+        <StyledLink text="Login" />
+        <StyledLink text="Sign Up" styletext="bg-cyan text-white py-2 px-4 rounded-full hover:bg-darkViolet font-poppins" />
       </div>
     </div>
   </nav>
@@ -45,7 +39,7 @@
 
 <script setup>
 import { ref } from 'vue';
-
+import StyledLink from './StyledLink.vue';
 const isMenuOpen = ref(false);
 
 function toggleMenu() {

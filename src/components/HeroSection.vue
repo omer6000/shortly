@@ -6,7 +6,7 @@
                 <img src="@/assets/illustration-working.svg" alt="Illustration" class="w-3/4 max-w-xs desktop:max-w-full h-auto">
             </div>
             <!-- Text Content (will be below illustration on mobile) -->
-            <div class="order-2 desktop:order-1 desktop:w-1/2 px-4 desktop:px-16">
+            <div class="order-2 desktop:order-1 desktop:w-1/2 px-4 desktop:px-16 desktop:text-start">
                 <h1 class="text-4xl desktop:text-7xl font-bold text-veryDarkViolet leading-tight">
                     More than just
                 </h1>
@@ -26,4 +26,4 @@
 import ButtonComponent from './ButtonComponent.vue';
 </script>
 
-<style scoped></style>
+<!-- <style scoped></style> -->

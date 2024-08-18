@@ -25,5 +25,3 @@
 <script setup>
 import ButtonComponent from './ButtonComponent.vue';
 </script>
-
-<!-- <style scoped></style> -->

@@ -2,7 +2,7 @@
   <nav class="flex justify-between items-center py-4 px-8 desktop:px-16 shadow-md text-body font-medium">
     <!-- Logo/Icon -->
     <div class="flex items-center space-x-8">
-      <img src="@/assets/logo.svg" alt="Shortly Icon" class="w-14 h-14 md:w-28 md:h-28">
+      <img src="@/assets/logo.svg" alt="Shortly Icon">
       
       <!-- Desktop Navigation Links (Hidden on Mobile) -->
       <div class="hidden desktop:flex space-x-8">
@@ -50,5 +50,3 @@ function toggleMenu() {
   isMenuOpen.value = !isMenuOpen.value;
 }
 </script>
-
-<!-- <style scoped></style> -->

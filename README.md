@@ -50,7 +50,7 @@ If you don't have Node.js or npm installed, you can install them via [Node Versi
 Clone this repository to your local machine:
 
 ```bash
-git clone <repository-url>
+git clone git@github.com:omer6000/shortly.git
 cd shortly
 ```
 

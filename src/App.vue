@@ -10,4 +10,3 @@
   import HeroSection from './components/HeroSection.vue'
   import ShortenLink from './components/ShortenLink.vue'
 </script>
-<!-- <style lang="scss" scoped></style> -->

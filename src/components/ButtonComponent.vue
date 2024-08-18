@@ -18,7 +18,7 @@ export default {
     },
     baseClasses: {
       type: String,
-      default: 'bg-cyan text-white hover:bg-darkViolet font-medium',
+      default: 'bg-cyan text-white hover:bg-opacity-70 font-medium',
     },
   },
 };

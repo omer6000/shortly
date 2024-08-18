@@ -18,6 +18,10 @@ export default {
       fontSize: {
         body: '18px',
       },
+      fontWeight: {
+        medium: 500,
+        bold: 700
+      },
       screens: {
         mobile: '375px',
         desktop: '1440px',

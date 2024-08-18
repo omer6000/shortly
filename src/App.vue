@@ -1,10 +1,12 @@
 <template>
-  <div class="flex flex-col min-h-screen cyan">
+  <div class="flex flex-col min-h-screen">
     <NavBar/>
+    <HeroSection/>
   </div>
 </template>
 <script setup>
   import NavBar from './components/NavBar.vue'
+  import HeroSection from './components/HeroSection.vue'
 </script>
 <style lang="scss" scoped></style>
 

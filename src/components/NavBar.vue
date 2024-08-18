@@ -1,20 +1,21 @@
 <template>
-  <nav class="flex justify-between items-center py-4 px-8 md:px-16 bg-white shadow-md">
-    <div class="text-3xl font-bold text-veryDarkViolet font-poppins">
-      Shortly
-    </div>
-
-    <!-- Desktop Navigation Links (Hidden on Mobile) -->
-    <div class="hidden desktop:flex space-x-8">
-      <StyledLink text="Features" />
-      <StyledLink text="Pricing" />
-      <StyledLink text="Resources" />
+  <nav class="flex justify-between items-center py-4 px-8 desktop:px-16 shadow-md text-body font-medium">
+    <!-- Logo/Icon -->
+    <div class="flex items-center space-x-8">
+      <img src="@/assets/logo.svg" alt="Shortly Icon" class="w-14 h-14 md:w-28 md:h-28">
+      
+      <!-- Desktop Navigation Links (Hidden on Mobile) -->
+      <div class="hidden desktop:flex space-x-8">
+        <StyledLink text="Features" />
+        <StyledLink text="Pricing" />
+        <StyledLink text="Resources" />
+      </div>
     </div>
 
     <!-- Desktop Login and Sign Up (Hidden on Mobile) -->
     <div class="hidden desktop:flex items-center space-x-4">
       <StyledLink text="Login" />
-      <StyledLink text="Sign Up" styletext="bg-cyan text-white py-2 px-4 rounded-full hover:bg-darkViolet font-poppins" />
+      <ButtonComponent text="Sign Up" customClasses="rounded-full px-4 py-2"/>
     </div>
 
     <!-- Mobile Menu Button (Hidden on Desktop) -->
@@ -25,13 +26,14 @@
     </button>
 
     <!-- Mobile Menu (Visible when the menu button is clicked) -->
-    <div v-if="isMenuOpen" class="absolute top-16 left-0 w-full bg-white shadow-md desktop:hidden">
+    <div v-if="isMenuOpen" class="absolute top-16 left-0 w-full darkViolet shadow-md desktop:hidden bg-darkViolet">
       <div class="flex flex-col items-center space-y-4 py-4">
         <StyledLink text="Features" />
         <StyledLink text="Pricing" />
         <StyledLink text="Resources" />
+        <hr class="w-full border-t border-grayishViolet">
         <StyledLink text="Login" />
-        <StyledLink text="Sign Up" styletext="bg-cyan text-white py-2 px-4 rounded-full hover:bg-darkViolet font-poppins" />
+        <ButtonComponent text="Sign Up" customClasses="rounded-full px-4 py-2"/>
       </div>
     </div>
   </nav>
@@ -40,6 +42,8 @@
 <script setup>
 import { ref } from 'vue';
 import StyledLink from './StyledLink.vue';
+import ButtonComponent from './ButtonComponent.vue';
+
 const isMenuOpen = ref(false);
 
 function toggleMenu() {

@@ -31,15 +31,16 @@
     //     type: String,
     //     default: "font-poppins",
     //   },
-    },
-    computed: {
-      computedClasses() {
-        return `${this.textClass} ${this.hoverClass}`;
-      },
-    },
-    methods: {
-    //   handleClick(event) {
+    }
+    ,
+    // computed: {
+    //   computedClasses() {
+    //     return `${this.textClass} ${this.hoverClass}`;
     //   },
-    },
+    // },
+    // methods: {
+    // //   handleClick(event) {
+    // //   },
+    // },
   };
   </script>  

@@ -62,13 +62,7 @@ Install the required dependencies using npm:
 npm install
 ```
 
-### 4. Build the Project
-
-```bash
-npm run build
-```
-
-### 5. Run the Development Server
+### 4. Run the Development Server
 
 Start the development server:
 
